@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="shortcut icon" href="../src/assets/logo-header.svg">
+</head>
+<body>
+    <!-- Home Header Section -->
+    <section>
+        <div class="w-[95%] mx-auto mt-8" dir="rtl">
+            <header class="relative bg-cover h-[90vh] rounded-2xl flex items-start pt-10 justify-center"
+                style="background-image: url('../src/assets/hero.svg');">
+    
+                <div class="relative z-10 w-[90%] mx-auto">
+                    <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
+                        <div>
+                            <img src="../src/assets/logo-header.svg" alt="Builder Logo" class="w-28 sm:w-32">
+                        </div>
+                        <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+    
+                        <div class="hidden lg:flex items-center gap-6">
+                            <ul class="flex space-x-6 space-x-reverse text-black font-medium">
+                                <li><a href="#">الرئيسية</a></li>
+                                <li><a href="#">من نحن</a></li>
+                                <li><a href="#">المشاريع</a></li>
+                                <li><a href="#">المركز الإعلامي</a></li>
+                                <li><a href="#">سجل اهتمامك</a></li>
+                                <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+                            </ul>
+                            <button class="bg-black text-white px-5 py-2 rounded-full text-sm hidden lg:block">
+                                تسجيل الدخول
+                            </button>
+                        </div>
+                    </nav>
+    
+                    <!-- Mobile Menu -->
+                    <div id="menu" class="hidden lg:hidden absolute top-16 right-0 w-full bg-white  rounded-[20px] p-4">
+                        <ul class="flex flex-col text-black font-medium space-y-4">
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">المشاريع</a></li>
+                            <li><a href="#">المركز الإعلامي</a></li>
+                            <li><a href="#">سجل اهتمامك</a></li>
+                            <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+                        </ul>
+                        <button class="bg-black text-white w-full py-2 rounded-full text-sm mt-4">
+                            تسجيل الدخول
+                        </button>
+                    </div>
+    
+                    <!-- Hero Text -->
+                    <div class="md:w-[40%] my-[10%] text-right px-4 sm:px-0 space-y-6">
+                        <h1 class="text-2xl md:text-4xl whitespace-wrap font-bold text-black mt-2 leading-relaxed">
+                            نحو حياة جديدة،<br>
+                            استثمر في مشروع العامرية اليوم! 
+                        </h1>
+                        <p class="text-black md:text-lg block">اكتشف مفهومًا جديدًا للحياة مع مشروعنا الذي يجمع بين الراحة والفخامة في بيئة متكاملة تلبي تطلعاتك. اغتنم هذه الفرصة وابدأ رحلتك نحو حياة جديدة اليوم.</p>
+                        <button class="mt-auto bg-black text-white flex items-center md:gap-4 gap-2 self-end text-sm md:text-lg md:py-2 p-1.5 px-3 rounded-[100px] whitespace-nowrap">
+                            اكتشف مشروعنا 
+                            <div class="w-10 h-10 flex items-center justify-center  bg-white rounded-full">
+                                <img src="../src/assets/arrow-up-left.svg" alt="arrow" class="w-6">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+    
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </section>  
+    
+    <!--  من نحن  -->
+    <section>
+        <div class="my-[2rem] md:my-[8rem]" dir="rtl">
+            <div class="p-8 md:w-[90%] m-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-40">
+                <div class="md:w-1/2">
+                    <img src="../src/assets/logo-home.svg" alt="">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-lg md:text-3xl font-bold text-[#0D0D0D]">من نحن؟</h2>
+                    <p class="text-[#808080] mt-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إىمن النصوص الأخرى إضافة إلى زيادة عدد الحروف التى إذا كنت تحتاج إى</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الإنجازات -->
+    <section>
+        <div class="w-[95%] mx-auto mt-8" dir="rtl">
+            <div class="relative bg-cover md:h-[55vh] h-[95vh] flex items-start pt-10 hidde justify-center"
+                style="background-image: url('../src/assets/section.svg');">
+    
+                <div class="relative z-10 w-[90%] mx-auto">
+                    <!-- Hero Text -->
+                    <div class="text-center my-[8%] px-4 sm:px-0 space-y-6">
+                        <h1 class="text-lg md:text-5xl whitespace-nowrap font-bold text-white mt-2 leading-relaxed"> 
+                            إنجازاتنا بالأرقام شهادة علي التميز  
+                        </h1>
+                        <p class="text-white md:text-xl font-extralight"> هذه الإحصائيات هي شهادة على رؤيتنا الراسخة، ودليل ملموس على جهودنا المبذولة<br> لتطوير مجتمعات مستدامة ومتكاملة.</p>
+                    </div>
+                    <div class="md:-mt-8 text-center w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="p-4 rounded-[20px] bg-white shadow-[0_10px_52px_0_rgba(52,64,84,0.10)] w-full">
+                            <h3 class="text-lg md:text-2xl font-bold text-[#1B1F27]">50,000 <span class="text-[#8D6E3D]">م²</span></h3>
+                            <p class="text-sm text-[#808080] md:text-lg">المساحات الخضراء ضمن مشاريعنا لبيئة صحية متكاملة</p>
+                        </div>
+                        <div class="p-4 rounded-[20px] bg-white shadow-[0_10px_52px_0_rgba(52,64,84,0.10)] w-full">
+                            <h3 class="text-lg md:text-2xl font-bold text-[#1B1F27]">85<span class="text-[#8D6E3D]">%</span></h3>
+                            <p class="text-sm text-[#808080] md:text-lg">من وحدات مشاريعنا تم حجزها مسبقًا قبل الإطلاق الرسمي</p>
+                        </div>
+                        <div class="p-4 rounded-[20px] bg-white shadow-[0_10px_52px_0_rgba(52,64,84,0.10)] w-full">
+                            <h3 class="text-lg md:text-2xl font-bold text-[#1B1F27]">50,000 <span class="text-[#8D6E3D]">+</span></h3>
+                            <p class="text-sm text-[#808080] md:text-lg">عامًا من الخبرة في تطوير المشاريع العقارية المتميزة</p>
+                        </div>
+                        <div class="p-4 rounded-[20px] bg-white shadow-[0_10px_52px_0_rgba(52,64,84,0.10)] w-full">
+                            <h3 class="text-lg md:text-2xl font-bold text-[#1B1F27]">98<span class="text-[#8D6E3D]">%</span></h3>
+                            <p class="text-sm text-[#808080] md:text-lg">رضا العملاء عن جودة المشاريع وخدمات ما بعد البيع</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- خدمات ما بعد البيع -->
+    <section>
+        <div class="flex items-center justify-center my-[6rem]" dir="rtl">
+            <div class="p-8 rounded-lg w-full md:w-[90%] m-auto">
+                <div>
+                    <h2 class="text-lg md:text-4xl font-bold text-[#0D0D0D]">خدمات ما بعد البيع</h2>
+                    <p class="text-[#A2A2A2] text-sm md:text-lg py-4">نحرص على رضا عملائنا حتى بعد إتمام عملية الشراء، من خلال تقديم خدمات دعم متكاملة تشمل <br> الصيانة، الاستشارات، وإدارة العقار، لضمان تجربة سكنية مريحة وخالية من المتاعب.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-[2rem]">
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/buliding.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-centern font-semibold">إتاحة خدمة تأجير العقار وربطة الكترونيا<br> دون تكاليف</p>
+                    </div>
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/message-notif.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-center font-semibold">التواصل المستمر بين السكان<br> والمشرف علي المشروع</p>
+                    </div>
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/lamp-charge.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-center font-semibold">الصيانة الدورية للمصاعد والممرات<br> والإنارة</p>
+                    </div>
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/ci_water-drop.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-center font-semibold">سداد فواتير المياه وصيانات الخزانات</p>
+                    </div>
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/empty-wallet.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-center font-semibold">سداد رواتب العمال والحراس</p>
+                    </div>
+                    <div class="text-center p-8 bg-[#3C757D] flex flex-col items-center justify-center bg-opacity-10 rounded-[24px] h-full min-h-[170px]">
+                        <div class="rounded-full w-14 h-14 flex items-center justify-center text-center bg-[#E4EBEC]">
+                            <img src="../src/assets/pepicons-pencil_electricity.svg" alt="" class="w-8 self-center">
+                        </div>
+                        <p class="flex-1 flex items-center justify-center font-semibold">سداد فاتوة الكهرباء</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- مدونتنا -->
+     <section>
+        <div class="flex items-center justify-center md:my-[4rem]" dir="rtl">
+            <div class="p-8 rounded-lg w-full md:w-[90%] m-auto">
+                <div class="space-y-2">
+                    <h4 class="font-bold text-xl">مدونتنا</h4>
+                    <h2 class=" text-xl md:text-4xl font-bold text-[#0D0D0D]">أحدث الأخبار من مدونتنا وصفحة الحدث</h2>
+                    <p class="text-[#808080]">احصل على آخر الاتجاهات والرؤى والإلهام في عالم الوشم والثقب وفن الجسد من خلال مدونتنا.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16">
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-1.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">كيف تختار المنزل المثالي؟ نصائح عملية لتحقيق حلمك السكني</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">اكتشف أهم المعايير التي يجب أن تأخذها بعين الاعتبار عند شراء منزل جديد، مثل الموقع، التصميم، والخدمات المحيطة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-2.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h2 class="text-2xl font-bold mb-2">أحدث الاتجاهات في تصميم العقارات لعام 2024</h2>
+                            <p class="text-[#808080] text-lg">تعرف على أبرز التوجهات في عالم تصميم المنازل والشقق، بما في ذلك الأساليب الذكية، والتصاميم المستدامة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-3.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">لماذا الاستثمار في العقارات هو الخيار الأفضل للمستقبل؟</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">العقارات تبقى واحدة من أكثر الاستثمارات استقرارًا وربحًا. تعرف على أسباب قوة هذا القطاع وكيف يمكنك الاستفادة منه لبناء مستقبل مالي آمن</p>
+                            <button class="bg-black text-white mt-auto self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- انصم إلينا -->
+    <section>
+        <div class="my-[6rem]" dir="rtl">
+            <div class="md:p-10 p-4 w-[90%] mx-auto flex items-center justify-between flex-col-reverse md:flex-row bg-[#181D24] rounded-[20px]">
+                <div class="md:w-1/2">
+                    <h1 class="text-lg md:text-5xl font-bold mb-4 text-white">انضم إلي عائلتنا<br> واستمتع بتجربة فريدة!</h1>
+                    <p class="text-[#E3E3E3] mt-6 text-md md:text-xl">انضم إلى عائلتنا واستمتع بتجربة فريدة تجمع بين الراحة والابتكار! مع تطبيقنا، ستجد كل ما تحتاجه في متناول يدك، من سهولة الحجز إلى خيارات الدفع المرنة. حمّل التطبيق الآن وكن جزءًا من مجتمعنا المميز، حيث نسعى لجعل حياتك أسهل وأكثر متعة!</p>
+                    <div class="mt-6 flex flex-col md:flex-row items-center md:items-start gap-4">
+                        <a href="#" class="lg:w-[25%] p-1 bg-black text-white rounded-lg flex items-center">
+                            <img src="../src/assets/google_play.svg" alt="Google Play" class="w-10">
+                            <div>
+                                <span class="font-extralight">حمل تطبيقنا</span>
+                                <p class="font-bold">Google Play</p>
+                            </div>
+                        </a>
+                        <a href="#" class="lg:w-[25%] p-1 bg-black text-white rounded-lg flex items-center gap-2">
+                            <img src="../src/assets/apple.svg" alt="App Store" class="w-8">
+                            <div>
+                                <span class="font-extralight">حمل تطبيقنا</span>
+                                <p class="font-bold">App Store</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="../src/assets/iphone.svg" alt="Mobile App Preview" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+     
+     <!-- شركاء النجاح -->
+     <section>
+         <div class="text-center mt-8 text-lg font-semibold">
+            <h2 class="text-xl md:text-5xl font-bold text-[#0D0D0D]">شركاء النجاح</h2> 
+        </div>
+        <div class="overflow-hidden w-full relative mt-[4rem]">
+            <div id="logoSlider" class="flex items-center gap-8 w-32 whitespace-nowrap"></div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const logos = [
+                "../src/assets/1.svg",
+                "../src/assets/2.svg",
+                "../src/assets/3.svg",
+                "../src/assets/4.svg",
+                "../src/assets/5.svg",
+                "../src/assets/6.svg",
+            ];
+
+            const slider = document.getElementById("logoSlider");
+
+            function createLogoElements() {
+                slider.innerHTML = "";
+
+                // Append original + duplicated logos for seamless effect
+                [...logos, ...logos].forEach((logo) => {
+                    const img = document.createElement("img");
+                    img.src = logo;
+                    img.alt = "Logo";
+                    img.className = "h-12 md:h-16 flex-shrink-0";
+                    slider.appendChild(img);
+                });
+
+                startMarquee(slider);
+            }
+
+            function startMarquee(element) {
+                let scrollAmount = 0;
+                function scroll() {
+                    scrollAmount -= 1;
+                    element.style.transform = `translateX(${scrollAmount}px)`;
+                    if (Math.abs(scrollAmount) >= element.scrollWidth / 2) {
+                        scrollAmount = 0;
+                    }
+                    requestAnimationFrame(scroll);
+                }
+                scroll();
+            }
+
+            createLogoElements();
+        });
+    </script>
+
+    <!-- سجل اهتمامك -->
+    <section>
+        <div class="flex items-center justify-center my-[4rem]" dir="rtl">
+            <div class="md:p-8 p-2 rounded-lg w-full md:w-[90%] m-auto">
+                <div class="w-full flex flex-col items-center md:flex-row border border-[#3C757D] rounded-[24px] p-10 gap-10 mt-10">
+                    <div class="w-full">
+                        <h2 class="text-xl md:text-5xl font-bold text-[#0D0D0D]">سجل اهتمامك</h2>
+                        <p class="text-[#808080] mt-2 text-lg md:text-xl">اترك بياناتك وسيتواصل معك فريقنا لتزويدك  <br>بجميع التفاصيل ومساعدتك في اختيار ما يناسبك.</p>
+                    </div>
+                    <form class="space-y-4 w-full">
+                        <div class="space-y-2">
+                            <label class="block text-[#0D0D0D] font-medium">الاسم</label>
+                            <input type="text" placeholder="الاسم" class="w-full p-3 bg-[#F9F9FB] outline-none rounded-[8px] text-[#808080]">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-[#0D0D0D] font-medium">رقم الجوال</label>
+                            <input type="tel" placeholder="+966 50 123 4567" class="w-full p-3 bg-[#F9F9FB] outline-none rounded-[8px] text-[#808080]">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-[#0D0D0D] font-medium">اختر المشروع</label>
+                            <select class="w-full p-3 bg-[#F9F9FB] outline-none rounded-[8px] text-[#808080]">
+                                <option>الرجاء تحديد خيار</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-[#0D0D0D] font-medium">ملاحظات (اختياري)</label>
+                            <textarea placeholder="اكتب ملاحظاتك هنا ...." class="w-full p-3 bg-[#F9F9FB] rounded-[8px] text-[#808080] outline-none"></textarea>
+                        </div>
+                        <div class="flex justify-end ">
+                            <button type="submit" class="bg-black text-white w-full py-2 rounded-[100px] text-lg ">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-[#1B1F27] pt-16 pb-6" dir="rtl">
+        <footer style="color: rgba(255 ,255, 255, 0.65)">
+            <div class="w-[90%] mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-4 text-right">
+                <div>
+                    <img src="../src/assets/logo-footer.svg" alt="Builder Logo"https class="mx-auto md:mx-0 w-52 md:w-auto">
+                    <p class="mt-4 text-sm md:text-lg">
+                        نوفر حلولًا مبتكرة في مجال التطوير العقاري، مع التركيز على <br>الجودة والتميز لتلبية احتياجات عملائنا وتعزيز نمو المشاريع.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">روابط سريعة</h3>
+                    <ul class="mt-4 md:space-y-2 text-sm flex items-center md:items-start justify-between flex-wrap md:flex-col">
+                        <li><a href="#" class="hover:text-white">انضم إلينا</a></li>
+                        <li><a href="#" class="hover:text-white">قالوا عنا</a></li>
+                        <li><a href="#" class="hover:text-white">عزز من مبيعاتك</a></li>
+                        <li><a href="#" class="hover:text-white">مميزاتنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">تواصل معنا</h3>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li class="flex items-center md:justify-start gap-2">
+                            <img src="../src/assets/phone.svg" alt="Phone"> +1 800-525-54-589
+                        </li>
+                        <li class="flex md:justify-start items-center gap-2">
+                            <img src="../src/assets/sms-tracking.svg" alt="Email"> test@gmail.com
+                        </li>
+                        <li class="flex md:justify-start items-center gap-2">
+                            <img src="../src/assets/location.svg" alt="Location">
+                            الرياض، حي العليا، شارع الملك فهد، برج النخيل، الطابق الخامس
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../src/assets/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="../src/assets/whatsapp.svg" alt="WhatsApp"></a>
+                        <a href="#"><img src="../src/assets/x.svg" alt="Twitter"></a>
+                        <a href="#"><img src="../src/assets/instagram.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 text-center text-sm border-t pt-6" style="border-top: 1px solid rgba(255, 255, 255, 0.3)">
+                &copy; جميع الحقوق محفوظة.
+            </div>
+        </footer>
+        </div>
+    </section>
+</body>
+</html>

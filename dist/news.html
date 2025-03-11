@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأخبار</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="shortcut icon" href="../src/assets/logo-header.svg">
+</head>
+<body>
+    <!-- News Header Section -->
+    <section>
+        <div class="w-[95%] mx-auto mt-8" dir="rtl">
+            <header class="relative bg-cover bg-center min-h-[300px] rounded-2xl flex items-start pt-10 justify-center"
+                style="background-image: url('../src/assets/background.svg');">
+    
+                <div class="relative z-10 w-[90%] mx-auto">
+                    <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
+                        <div>
+                            <img src="../src/assets/logo-header.svg" alt="Builder Logo" class="w-28 sm:w-32">
+                        </div>
+                        <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+    
+                        <div class="hidden lg:flex items-center gap-6">
+                            <ul class="flex space-x-6 space-x-reverse text-black font-medium">
+                                <li><a href="#">الرئيسية</a></li>
+                                <li><a href="#">من نحن</a></li>
+                                <li><a href="#">المشاريع</a></li>
+                                <li><a href="#">المركز الإعلامي</a></li>
+                                <li><a href="#">سجل اهتمامك</a></li>
+                                <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+                            </ul>
+                            <button class="bg-black text-white px-5 py-2 rounded-full text-sm hidden lg:block">
+                                تسجيل الدخول
+                            </button>
+                        </div>
+                    </nav>
+    
+                    <!-- Mobile Menu -->
+                    <div id="menu" class="hidden lg:hidden absolute top-16 right-0 w-full bg-white  rounded-[20px] p-4">
+                        <ul class="flex flex-col text-black font-medium space-y-4">
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">المشاريع</a></li>
+                            <li><a href="#">المركز الإعلامي</a></li>
+                            <li><a href="#">سجل اهتمامك</a></li>
+                            <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+                        </ul>
+                        <button class="bg-black text-white w-full py-2 rounded-full text-sm mt-4">
+                            تسجيل الدخول
+                        </button>
+                    </div>
+    
+                    <!-- Hero Text -->
+                    <div class="mt-12 text-right px-4 sm:px-0">
+                        <p class="text-gray-500 text-sm">الرئيسية / <span class="text-black font-medium">المركز الإعلامي</span></p>
+                        <h1 class="text-xl md:text-3xl font-bold text-black mt-2 leading-relaxed">
+                              مفتاح النجاح نحو حياة جديدة
+                        </h1>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+    
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </section>    
+
+    <!-- الأخبار -->
+     <section>
+        <div class="flex items-center justify-center my-[2rem]" dir="rtl">
+            <div class="bg-white p-8 rounded-lg w-full md:w-[90%] m-auto">
+                <p class="text-[#808080] mt-2 text-lg">الأخبار</p>
+                <h2 class=" text-3xl font-bold text-[#0D0D0D]">مفتاح النجاح نحو حياة جديدة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16">
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-1.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">كيف تختار المنزل المثالي؟ نصائح عملية لتحقيق حلمك السكني</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">اكتشف أهم المعايير التي يجب أن تأخذها بعين الاعتبار عند شراء منزل جديد، مثل الموقع، التصميم، والخدمات المحيطة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-2.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h2 class="text-2xl font-bold mb-2">أحدث الاتجاهات في تصميم العقارات لعام 2024</h2>
+                            <p class="text-[#808080] text-lg">تعرف على أبرز التوجهات في عالم تصميم المنازل والشقق، بما في ذلك الأساليب الذكية، والتصاميم المستدامة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-3.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">لماذا الاستثمار في العقارات هو الخيار الأفضل للمستقبل؟</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">العقارات تبقى واحدة من أكثر الاستثمارات استقرارًا وربحًا. تعرف على أسباب قوة هذا القطاع وكيف يمكنك الاستفادة منه لبناء مستقبل مالي آمن</p>
+                            <button class="bg-black text-white mt-auto self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-4.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">دليل المشتري الأول: كيف تبدأ رحلة شراء عقارك الأول؟</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">ذا كنت تخطط لشراء أول عقار لك، فهذه التدوينة ستساعدك على فهم الإجراءات الأساسية، وتجنب الأخطاء الشائعة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-5.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">فوائد السكن في المجتمعات العمرانية الجديدة</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">تعرف على المزايا التي تقدمها المجتمعات العمرانية الحديثة، بما في ذلك البنية التحتية المتطورة، الحياة المجتمعية، والفرص الاستثمارية الواعدة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-[#D6D6D6] w-full flex flex-col h-full">
+                        <img src="../src/assets/news-6.svg" alt="Image" class="w-full rounded-t-[20px]">
+                        <div class="flex items-center gap-2 p-4">
+                            <div class="flex items-center gap-2 border-l border-[#808080] pl-2">
+                                <img src="../src/assets/chat.svg" alt="">
+                                <p class="text-[#808080]">22 يونيو</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="../src/assets/user.svg" alt="">
+                                <p class="text-[#808080]">9 دقائق للقراءة</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 flex flex-col flex-grow">
+                            <h2 class="text-lg md:text-2xl font-bold mb-2">كيف تجعل عقارك أكثر جذبًا للمستأجرين والمشترين؟</h2>
+                            <p class="text-sm text-[#808080] md:text-lg">أهم النصائح لتحسين قيمة عقارك في السوق من خلال التصميم الداخلي، التسويق الاحترافي، واختيار الخدمات المناسبة</p>
+                            <button class="mt-auto bg-black text-white self-end px-8 py-2 rounded-[100px]">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section>
+        <div class="bg-[#1B1F27] pt-16 pb-6" dir="rtl">
+        <footer style="color: rgba(255 ,255, 255, 0.65)">
+            <div class="w-[90%] mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-4 text-right">
+                <div>
+                    <img src="../src/assets/logo-footer.svg" alt="Builder Logo" class="mx-auto md:mx-0 w-52 md:w-auto">
+                    <p class="mt-4 text-sm md:text-lg">
+                        نوفر حلولًا مبتكرة في مجال التطوير العقاري، مع التركيز على <br>الجودة والتميز لتلبية احتياجات عملائنا وتعزيز نمو المشاريع.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">روابط سريعة</h3>
+                    <ul class="mt-4 md:space-y-2 text-sm flex items-center md:items-start justify-between flex-wrap md:flex-col">
+                        <li><a href="#" class="hover:text-white">انضم إلينا</a></li>
+                        <li><a href="#" class="hover:text-white">قالوا عنا</a></li>
+                        <li><a href="#" class="hover:text-white">عزز من مبيعاتك</a></li>
+                        <li><a href="#" class="hover:text-white">مميزاتنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">تواصل معنا</h3>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li class="flex items-center md:justify-start gap-2">
+                            <img src="../src/assets/phone.svg" alt="Phone"> +1 800-525-54-589
+                        </li>
+                        <li class="flex md:justify-start items-center gap-2">
+                            <img src="../src/assets/sms-tracking.svg" alt="Email"> test@gmail.com
+                        </li>
+                        <li class="flex md:justify-start items-center gap-2">
+                            <img src="../src/assets/location.svg" alt="Location">
+                            الرياض، حي العليا، شارع الملك فهد، برج النخيل، الطابق الخامس
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../src/assets/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="../src/assets/whatsapp.svg" alt="WhatsApp"></a>
+                        <a href="#"><img src="../src/assets/x.svg" alt="Twitter"></a>
+                        <a href="#"><img src="../src/assets/instagram.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 text-center text-sm border-t pt-6" style="border-top: 1px solid rgba(255, 255, 255, 0.3)">
+                &copy; جميع الحقوق محفوظة.
+            </div>
+        </footer>
+        </div>
+    </section>
+</body>
+</html>
