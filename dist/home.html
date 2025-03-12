@@ -9,14 +9,7 @@
     <link rel="shortcut icon" href="../src/assets/logo-header.svg">
 </head>
 <body>
-    <!-- Home Header Section -->
-    <section>
-        <div class="w-[95%] mx-auto mt-8" dir="rtl">
-            <header class="relative bg-cover h-[90vh] rounded-2xl flex items-start pt-10 justify-center"
-                style="background-image: url('../src/assets/hero.svg');">
-    
-                <div class="relative z-10 w-[90%] mx-auto">
-                    <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
+    <!-- <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
                         <div>
                             <img src="../src/assets/logo-header.svg" alt="Builder Logo" class="w-28 sm:w-32">
                         </div>
@@ -43,7 +36,6 @@
                         </div>
                     </nav>
     
-                    <!-- Mobile Menu -->
                     <div id="menu" class="hidden lg:hidden absolute top-16 right-0 w-full bg-white  rounded-[20px] p-4">
                         <ul class="flex flex-col text-black font-medium space-y-4">
                             <li><a href="#">الرئيسية</a></li>
@@ -56,8 +48,14 @@
                         <button class="bg-black text-white w-full py-2 rounded-full text-sm mt-4">
                             تسجيل الدخول
                         </button>
-                    </div>
+                    </div> -->
+    <!-- Home Header Section -->
+    <section>
+        <div class="w-[95%] mx-auto mt-8" dir="rtl">
+            <header class="relative bg-cover h-[90vh] rounded-2xl flex items-start pt-10 justify-center"
+                style="background-image: url('../src/assets/hero.svg');">
     
+                <div class="relative z-10 w-[90%] mx-auto">
                     <!-- Hero Text -->
                     <div class="md:w-[40%] my-[10%] text-right px-4 sm:px-0 space-y-6">
                         <h1 class="text-2xl md:text-4xl whitespace-wrap font-bold text-black mt-2 leading-relaxed">
@@ -65,7 +63,7 @@
                             استثمر في مشروع العامرية اليوم! 
                         </h1>
                         <p class="text-black md:text-lg block">اكتشف مفهومًا جديدًا للحياة مع مشروعنا الذي يجمع بين الراحة والفخامة في بيئة متكاملة تلبي تطلعاتك. اغتنم هذه الفرصة وابدأ رحلتك نحو حياة جديدة اليوم.</p>
-                        <button class="mt-auto bg-black text-white flex items-center md:gap-4 gap-2 self-end text-sm md:text-lg md:py-2 p-1.5 px-3 rounded-[100px] whitespace-nowrap">
+                        <button class="mt-[4rem] bg-black text-white flex items-center md:gap-4 gap-2 self-end text-sm md:text-lg md:py-2 p-1.5 px-3 rounded-[100px] whitespace-nowrap">
                             اكتشف مشروعنا 
                             <div class="w-10 h-10 flex items-center justify-center  bg-white rounded-full">
                                 <img src="../src/assets/arrow-up-left.svg" alt="arrow" class="w-6">
@@ -75,7 +73,8 @@
                 </div>
             </header>
         </div>
-    
+    </section>  
+<!--     
         <script>
             const menuBtn = document.getElementById('menu-btn');
             const menu = document.getElementById('menu');
@@ -83,8 +82,7 @@
             menuBtn.addEventListener('click', () => {
                 menu.classList.toggle('hidden');
             });
-        </script>
-    </section>  
+        </script> -->
     
     <!--  من نحن  -->
     <section>
@@ -104,7 +102,7 @@
     <!-- الإنجازات -->
     <section>
         <div class="w-[95%] mx-auto mt-8" dir="rtl">
-            <div class="relative bg-cover md:h-[55vh] h-[95vh] flex items-start pt-10 hidde justify-center"
+            <div class="relative bg-cover md:h-[55vh] h-[95vh] flex items-start pt-10 justify-center"
                 style="background-image: url('../src/assets/section.svg');">
     
                 <div class="relative z-10 w-[90%] mx-auto">
@@ -267,14 +265,14 @@
                     <h1 class="text-lg md:text-5xl font-bold mb-4 text-white">انضم إلي عائلتنا<br> واستمتع بتجربة فريدة!</h1>
                     <p class="text-[#E3E3E3] mt-6 text-md md:text-xl">انضم إلى عائلتنا واستمتع بتجربة فريدة تجمع بين الراحة والابتكار! مع تطبيقنا، ستجد كل ما تحتاجه في متناول يدك، من سهولة الحجز إلى خيارات الدفع المرنة. حمّل التطبيق الآن وكن جزءًا من مجتمعنا المميز، حيث نسعى لجعل حياتك أسهل وأكثر متعة!</p>
                     <div class="mt-6 flex flex-col md:flex-row items-center md:items-start gap-4">
-                        <a href="#" class="lg:w-[25%] p-1 bg-black text-white rounded-lg flex items-center">
+                        <a href="#" class="px-2 py-1 bg-black text-white rounded-lg flex items-center">
                             <img src="../src/assets/google_play.svg" alt="Google Play" class="w-10">
                             <div>
                                 <span class="font-extralight">حمل تطبيقنا</span>
                                 <p class="font-bold">Google Play</p>
                             </div>
                         </a>
-                        <a href="#" class="lg:w-[25%] p-1 bg-black text-white rounded-lg flex items-center gap-2">
+                        <a href="#" class="px-2 py-1 bg-black text-white rounded-lg flex items-center gap-2">
                             <img src="../src/assets/apple.svg" alt="App Store" class="w-8">
                             <div>
                                 <span class="font-extralight">حمل تطبيقنا</span>
@@ -298,52 +296,51 @@
         <div class="overflow-hidden w-full relative mt-[4rem]">
             <div id="logoSlider" class="flex items-center gap-8 w-32 whitespace-nowrap"></div>
         </div>
-    </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const logos = [
+                    "../src/assets/1.svg",
+                    "../src/assets/2.svg",
+                    "../src/assets/3.svg",
+                    "../src/assets/4.svg",
+                    "../src/assets/5.svg",
+                    "../src/assets/6.svg",
+                ];
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const logos = [
-                "../src/assets/1.svg",
-                "../src/assets/2.svg",
-                "../src/assets/3.svg",
-                "../src/assets/4.svg",
-                "../src/assets/5.svg",
-                "../src/assets/6.svg",
-            ];
+                const slider = document.getElementById("logoSlider");
 
-            const slider = document.getElementById("logoSlider");
+                function createLogoElements() {
+                    slider.innerHTML = "";
 
-            function createLogoElements() {
-                slider.innerHTML = "";
+                    // Append original + duplicated logos for seamless effect
+                    [...logos, ...logos].forEach((logo) => {
+                        const img = document.createElement("img");
+                        img.src = logo;
+                        img.alt = "Logo";
+                        img.className = "h-12 md:h-16 flex-shrink-0";
+                        slider.appendChild(img);
+                    });
 
-                // Append original + duplicated logos for seamless effect
-                [...logos, ...logos].forEach((logo) => {
-                    const img = document.createElement("img");
-                    img.src = logo;
-                    img.alt = "Logo";
-                    img.className = "h-12 md:h-16 flex-shrink-0";
-                    slider.appendChild(img);
-                });
-
-                startMarquee(slider);
-            }
-
-            function startMarquee(element) {
-                let scrollAmount = 0;
-                function scroll() {
-                    scrollAmount -= 1;
-                    element.style.transform = `translateX(${scrollAmount}px)`;
-                    if (Math.abs(scrollAmount) >= element.scrollWidth / 2) {
-                        scrollAmount = 0;
-                    }
-                    requestAnimationFrame(scroll);
+                    startMarquee(slider);
                 }
-                scroll();
-            }
 
-            createLogoElements();
-        });
-    </script>
+                function startMarquee(element) {
+                    let scrollAmount = 0;
+                    function scroll() {
+                        scrollAmount -= 1;
+                        element.style.transform = `translateX(${scrollAmount}px)`;
+                        if (Math.abs(scrollAmount) >= element.scrollWidth / 2) {
+                            scrollAmount = 0;
+                        }
+                        requestAnimationFrame(scroll);
+                    }
+                    scroll();
+                }
+
+                createLogoElements();
+            });
+        </script>
+    </section>
 
     <!-- سجل اهتمامك -->
     <section>

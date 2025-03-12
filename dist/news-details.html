@@ -9,6 +9,46 @@
     <link rel="shortcut icon" href="../src/assets/logo-header.svg">
 </head>
 <body>
+    <!-- <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
+        <div>
+            <img src="../src/assets/logo-header.svg" alt="Builder Logo" class="w-28 sm:w-32">
+        </div>
+        <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <div class="hidden lg:flex items-center gap-6">
+            <ul class="flex space-x-6 space-x-reverse text-black font-medium">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">المشاريع</a></li>
+                <li><a href="#">المركز الإعلامي</a></li>
+                <li><a href="#">سجل اهتمامك</a></li>
+                <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+            </ul>
+            <button class="bg-black text-white px-5 py-2 rounded-full text-sm hidden lg:block">
+                تسجيل الدخول
+            </button>
+        </div>
+    </nav>
+
+    <div id="menu" class="hidden lg:hidden absolute top-16 right-0 w-full bg-white  rounded-[20px] p-4">
+        <ul class="flex flex-col text-black font-medium space-y-4">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">المشاريع</a></li>
+            <li><a href="#">المركز الإعلامي</a></li>
+            <li><a href="#">سجل اهتمامك</a></li>
+            <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
+        </ul>
+        <button class="bg-black text-white w-full py-2 rounded-full text-sm mt-4">
+            تسجيل الدخول
+        </button>
+    </div> -->
     <!-- News Header Section -->
     <section>
         <div class="w-[95%] mx-auto mt-8" dir="rtl">
@@ -16,49 +56,6 @@
                 style="background-image: url('../src/assets/background.svg');">
     
                 <div class="relative z-10 w-[90%] mx-auto">
-                    <nav class="flex justify-between items-center bg-white bg-opacity-40 rounded-2xl p-3">
-                        <div>
-                            <img src="../src/assets/logo-header.svg" alt="Builder Logo" class="w-28 sm:w-32">
-                        </div>
-                        <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"></path>
-                            </svg>
-                        </button>
-    
-                        <div class="hidden lg:flex items-center gap-6">
-                            <ul class="flex space-x-6 space-x-reverse text-black font-medium">
-                                <li><a href="#">الرئيسية</a></li>
-                                <li><a href="#">من نحن</a></li>
-                                <li><a href="#">المشاريع</a></li>
-                                <li><a href="#">المركز الإعلامي</a></li>
-                                <li><a href="#">سجل اهتمامك</a></li>
-                                <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
-                            </ul>
-                            <button class="bg-black text-white px-5 py-2 rounded-full text-sm hidden lg:block">
-                                تسجيل الدخول
-                            </button>
-                        </div>
-                    </nav>
-    
-                    <!-- Mobile Menu -->
-                    <div id="menu" class="hidden lg:hidden absolute top-16 right-0 w-full bg-white  rounded-[20px] p-4">
-                        <ul class="flex flex-col text-black font-medium space-y-4">
-                            <li><a href="#">الرئيسية</a></li>
-                            <li><a href="#">من نحن</a></li>
-                            <li><a href="#">المشاريع</a></li>
-                            <li><a href="#">المركز الإعلامي</a></li>
-                            <li><a href="#">سجل اهتمامك</a></li>
-                            <li><a href="#" class="font-bold text-black">تواصل معنا</a></li>
-                        </ul>
-                        <button class="bg-black text-white w-full py-2 rounded-full text-sm mt-4">
-                            تسجيل الدخول
-                        </button>
-                    </div>
-    
-                    <!-- Hero Text -->
                     <div class="mt-12 text-right px-4 sm:px-0">
                         <p class="text-[#4B4B4B] text-sm">الرئيسية / <span class="text-[#4B4B4B] font-sm">المركز الإعلامي</span><span class="text-black font-medium"> / الخبر</span></p>
                         <h1 class="text-xl md:text-3xl font-bold text-black mt-2 leading-relaxed">
@@ -68,16 +65,15 @@
                 </div>
             </header>
         </div>
-    
-        <script>
-            const menuBtn = document.getElementById('menu-btn');
-            const menu = document.getElementById('menu');
-    
-            menuBtn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        </script>
     </section>  
+    <!-- <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script> -->
     
     <!-- فوائد السكن ... -->
     <section>
